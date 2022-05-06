@@ -1,0 +1,1006 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("Schiff.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8a959e;
+   
+
+}
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+
+    background: rgba(13, 59, 94, .8);
+    color: white;
+    width: 100%;
+align-items: center;
+    height: 110px;
+
+
+
+}
+
+.navbar p {
+
+    color: #fff;
+    align-items: center;
+    
+ 
+
+
+}
+
+.navbar ul {
+
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+margin-right: 5em;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    align-items: center;
+
+}
+
+.navbar input[type="checkbox"]{
+    display:none ;
+}
+
+.toggle_button{
+    width: 30px;
+    height: 23px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 100px;
+}
+
+@media (max-width: 770px){
+
+    .toggle_button{
+        display: flex;
+    }
+    .navbar ul {
+
+     height: min-content;
+     width: 100%;
+     display: block;
+     background-color: rgba(13, 59, 94, .8);;
+      position: absolute;
+      top: 80px;
+    }
+.navbar-links li{
+    height: min-content;
+    width: 100%;
+}
+
+.navbar ul a{
+    padding: 30px 0;
+
+}
+
+#toggle_button:checked ~ ul{
+    display: block;
+}
+
+    }
+     
+.brand-title p {
+    margin-top: 0.3%;
+    display: block;
+}
+
+.brand-title {
+    margin-top: 0.5%;
+    margin-left: 15%;
+  
+}
+
+@media (max-width: 1100px){
+
+    .brand-title p {
+        margin-top: 0.3%;
+        display: block;
+        font-size: 14px;
+    }
+    
+    .brand-title {
+        margin-top: 0.5%;
+        margin-left: 15%;
+    }
+    
+
+}
+
+@media (max-width: 1000px){
+
+    .brand-title p {
+        margin-top: 0.3%;
+        display: block;
+        font-size: 12px;
+    }
+    
+    .brand-title {
+        margin-top: 0.5%;
+        margin-left: 15%;
+        
+    }
+    
+}
+
+@media (max-width: 930px){
+
+    .brand-title p {
+        margin-top: 0.3%;
+        
+        font-size: 10px;
+    }
+    
+    .brand-title img {
+        margin-top: 0.5%;
+   width: 180px;
+        
+    }
+    
+
+}
+.navbar-links li a {
+
+
+
+
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.Regresse {
+    color: white;
+    position: relative;
+    left: 15%;
+    top: 5em;
+    font-size: 38px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
+
+@media (max-width: 1300px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 4.5em;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 1100px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 3.5em;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 2em;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 900px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 1.5em;
+        font-size: 28px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 800px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 1.5em;
+        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 1em;
+        font-size: 18px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 700px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: 1em;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .Regresse {
+        color: white;
+        position: relative;
+        left: 15%;
+        top: -1em;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+
+    }
+}
+
+.Auftrag-Transport p {
+    margin-bottom: 5%;
+    text-align: center;
+    color: #222222;
+    margin-top: 25%;
+    font-size: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+@media (max-width: 900px) {
+    .Auftrag-Transport p {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #222222;
+        margin-top: 25%;
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+}
+
+
+@media (max-width: 800px) {
+    .Auftrag-Transport p {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #222222;
+        margin-top: 20%;
+        font-size: 18px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+}
+@media (max-width: 750px) {
+    .Auftrag-Transport p {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #222222;
+        margin-top: 20%;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+}
+
+@media (max-width: 700px) {
+    .Auftrag-Transport p {
+        margin-bottom: 5%;
+        text-align: center;
+        color: #222222;
+        margin-top: 15%;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #8a959e;
+
+}
+
+.Icon {
+    position: absolute;
+    top: -2.2em;
+    left: -2.8em;
+
+}
+
+.Box {
+
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    margin-top: 8%;
+    justify-content: center;
+    gap: 8em;
+    position: relative;
+    flex-wrap: nowrap;
+    margin-left: 5em;
+  
+}
+
+@media (max-width:900px){
+    
+.Box {
+
+    display: grid;
+    
+    grid-template-rows: 25% 25% 25% 25%;
+    align-items: center;
+    margin-top: 8%;
+    justify-content: center;
+    gap: 8em;
+    position: relative;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(auto-fill, 20em);
+  
+}
+    
+
+}
+
+.Box p {
+    color: #8a959e
+}
+
+.Heading {
+    position: relative;
+    color: #0d3b5e;
+    font-size: 24px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.fields-tile {
+    background-color: #f3f3f3;
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 55% 35%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+
+.fields-tile-img-container {
+    margin-left: 5em;
+}
+
+.fields-tile-content h3 {
+    position: relative;
+    color: #0d3b5e;
+    font-size: 24px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-block-xl {
+    position: static;
+    top: -20em;
+    margin-top: -10em;
+}
+
+@media (max-width:900px){
+    .content-block-xl {
+        position: static;
+        margin-top: 10%;
+    }
+}
+.Tau-Image {
+    margin: 10%;
+
+    
+}
+
+.Auftraggeber-Headline {
+    margin-left: 11%;
+    color: #0d3b5e;
+    font-size: 32px;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+    bottom: -0.5em;
+    padding: 0;
+}
+
+@media (max-width: 750px){
+    .Auftraggeber-Headline {
+    margin-left: 11%;
+    color: #0d3b5e;
+    font-size: 26px;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+    bottom: -0.5em;
+    padding: 0;
+}
+
+}
+
+.classic-ul {
+
+    list-style-image: url("square 8px.png");
+
+
+}
+
+.classic-li {
+    margin-left: 10%;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+    font-weight: 400;
+    color: black;
+}
+
+.classic-ul {
+    white-space: pre-line;
+}
+
+.info-list-text-block {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin-left: 40vw;
+    position: static;
+    top: 0;
+    margin-top: -21em;
+    line-break: auto;
+    overflow-wrap: break-word;
+
+}
+
+@media (max-width:900px){
+    
+.info-list-text-block {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-left: 60%;
+    position: static;
+    top: 0;
+    margin-top: -21em;
+    line-break: auto;
+    overflow-wrap: break-word;
+
+}
+
+}
+
+
+@media (max-width:800px){
+    
+    .info-list-text-block {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin-left: 60%;
+        position: static;
+        top: 0;
+        margin-top: -21em;
+        line-break: auto;
+        overflow-wrap: break-word;
+    
+    }
+    
+    }
+
+    
+@media (max-width:700px){
+    
+    .info-list-text-block {
+      
+        position: relative;
+       margin: 2%;
+      width: 50%;
+        margin-left:5em;
+    
+    }
+    
+    }
+
+.Tau-Image img {
+    margin-top: 17.5%;
+    height: 375px;
+
+}
+
+@media (max-width:800px){
+    
+ 
+.Tau-Image img{
+    height: 150px; 
+  margin: 5%;
+    }}
+
+
+.Über-Uns {
+    justify-content: center;
+
+    align-items: center;
+    width: 45%;
+
+    position: relative;
+    margin-left: 25%;
+    block-size: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+    height: 30%;
+
+}
+
+.Über-Uns h2 {
+    position: relative;
+    color: #0d3b5e;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.Über-Uns p {
+    line-height: 1.7;
+
+}
+
+
+@media (max-width:800px){
+    .Über-Uns {
+        justify-content: center;
+    
+        align-items: center;
+        width: 80%;
+    
+        position: relative;
+        margin-left: 15%;
+        block-size: auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+    
+        height: 30%;
+    
+    }
+
+    .Über-Uns h2 {
+        position: relative;
+        color: #0d3b5e;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    
+    }
+
+}
+
+
+.content-block {
+    margin-top: 17.5%;
+    height: 100%;
+    width: 60%;
+    justify-content: center;
+
+    position: static;
+    margin-left: 15%;
+}
+
+.content-block h2 {
+
+    position: relative;
+    color: #0d3b5e;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Kontakt-Formular {
+    margin-top: 10%;
+    margin-left: 10%;
+position: static;
+}
+
+.Kontakt-Formular h1 {
+
+
+    position: relative;
+    color: #0d3b5e;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.Kontakt-Formular form {
+    background-color: #f3f3f3;
+    height: 550px;
+    width: 550px;
+    padding: 40px;
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Kontakt-Formular button {
+    color: #f3f3f3;
+    background-color: #0d3b5e;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.Adresse {
+ 
+    width: 35%;
+    margin-left: 48%;
+    top: 0;
+    margin-top: -570px;
+    position: relative;
+
+}
+
+@media (max-width:1500px){
+    
+.Adresse {
+   
+   
+    margin-left: 50%;
+    top: 0;
+    margin-top: -570px;
+    
+
+}
+
+}
+
+@media (max-width:1450px){
+    
+    .Adresse {
+       
+       
+        margin-left: 52%;
+        top: 0;
+        margin-top: -570px;
+        
+    
+    }
+    
+    }
+
+    @media (max-width:1400px){
+    
+        .Adresse {
+           
+           
+            margin-left: 55%;
+            top: 0;
+            margin-top: -570px;
+            
+        
+        }
+        
+        }
+
+        @media (max-width:1350px){
+    
+            .Adresse {
+               
+               
+                margin-left: 65%;
+                top: 0;
+                margin-top: -570px;
+                
+            
+            }
+            
+            }
+
+            @media (max-width:1000px){
+
+                .Adresse {
+                   
+                   
+                    margin-left: 70%;
+                    top: 0;
+                    margin-top: -570px;
+                    
+                
+                }
+                
+                }
+        
+                @media (max-width: 900px){
+
+                    .Adresse {
+                       
+                       
+                        margin-left: 75%;
+                        top: 0;
+                        margin-top: -570px;
+                        
+                    
+                    }
+                    
+                    }
+
+                    @media (max-width: 850px){
+
+                        .Adresse {
+                           
+                           
+                            margin-left: 80%;
+                            top: 0;
+                            margin-top: -570px;
+                            
+                        
+                        }
+                        
+                        }
+
+                        
+                    @media (max-width: 800px){
+
+                        .Adresse {
+                           
+                           
+                            margin-left: 85%;
+                            top: 0;
+                            margin-top: -570px;
+                            
+                        
+                        }
+                        
+                        }
+
+                        @media (max-width: 750px){
+
+                            .Adresse {
+                               
+                               
+                              margin: 10%;
+                              font: size 14px; ;  
+                            
+                            }
+                            
+                            }
+    
+                            @media (max-width: 800px){
+
+                                .Kontakt-Formular {
+                                    margin-top: 10%;
+                                    margin-left: 10%;
+                                position: static;
+                                }
+                                
+                                .Kontakt-Formular h1 {
+                                
+                                
+                                    position: relative;
+                                    color: #0d3b5e;
+                                    font-size: 34px;
+                                    font-weight: bold;
+                                    font-family: 'Open Sans', sans-serif;
+                                  width: 500px; ;
+                                
+                                }
+                                
+                                .Kontakt-Formular form {
+                                    background-color: #f3f3f3;
+                                    height: 500px;
+                                    width: 500px;
+                                    padding: 40px;
+                                    font-size: 13.5px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                
+                                }
+                                
+                                
+                                
+                                }
+        
+                                @media (max-width: 750px){
+                                    .Kontakt-Formular {
+                                        margin-top: 10%;
+                                        margin-left: 10%;
+                                    position: static;
+                                    }
+                                    
+                                    .Kontakt-Formular h1 {
+                                    
+                                    
+                                        position: relative;
+                                        color: #0d3b5e;
+                                        font-size: 34px;
+                                        font-weight: bold;
+                                        font-family: 'Open Sans', sans-serif;
+                                      width: 450px; ;
+                                    
+                                    }
+                                    
+                                    .Kontakt-Formular form {
+                                        background-color: #f3f3f3;
+                                        height: 450px;
+                                        width: 450px;
+                                        padding: 40px;
+                                        font-size: 13.5px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                    
+                                    }
+                                    
+                                    
+                                    
+                                    }
+        
+                                    @media (max-width: 600px){
+                                        .Kontakt-Formular {
+                                            margin-top: 10%;
+                                            margin-left: 5%;
+                                        position: static;
+                                        }
+                                        
+                                        .Kontakt-Formular h1 {
+                                        
+                                        
+                                            position: relative;
+                                            color: #0d3b5e;
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            font-family: 'Open Sans', sans-serif;
+                                          width: 400px; ;
+                                        
+                                        }
+                                        
+                                        .Kontakt-Formular form {
+                                            background-color: #f3f3f3;
+                                            height: 400px;
+                                            width: 400px;
+                                            padding: 40px;
+                                            font-size: 13.5px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                        
+                                        }
+                                        
+                                        
+                                        
+                                        }
+            
+                                    
+
+                            
+
+.Kontakt-Formular input[type="text"],
+.Kontakt-Formular input[type="email"],
+.Kontakt-Formular input[type="search"] {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 4px;
+    outline: none;
+}
+
+.Kontakt-Formular textarea {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 4px;
+    outline: none;
+    height: 100px;
+    resize: none;
+}
+
+.Maps {
+    margin-top: 35%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    
+}
+
+@media (max-width:800px) {
+
+    .Maps {
+        margin-top: 10em;
+        margin-left: 10%;
+        margin-bottom: 10em;
+       
+    }
+    
+}
+
